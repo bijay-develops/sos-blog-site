@@ -1,0 +1,71 @@
+:root{
+    --bg: #8399ab ;
+    --bgSoft: rgb(13, 96, 121);
+    --text: rgb(10, 9, 9);
+    --textSoft: rgb(154, 149, 149);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--bg);
+    color: var(--text);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container{
+    max-width: 1366px;
+    padding: 0 50px 0 50px;
+    margin: auto;
+    min-height: 100vh;
+    /* background-color: #bf9d9d ; For determining the area of the container*/
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+@media (max-width:1536px) {
+    .container{
+        max-width: 1366px;
+    }
+}
+
+@media (max-width:1366px) {
+    .container{
+        max-width: 1280px;
+    }
+}
+
+@media (max-width:1280px) {
+    .container{
+        max-width: 1024px;
+    }
+}
+
+@media (max-width:1024px) {
+    .container{
+        max-width: 768px;
+    }
+}
+
+@media (max-width:768px) {
+    .container{
+        max-width: 640px;
+        padding: 0 10px 0 10px;
+    }
+}
+
+@media (max-width:640px) {
+    .container{
+        max-width: 475px;
+    }
+}
+
